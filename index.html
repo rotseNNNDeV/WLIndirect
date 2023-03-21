@@ -1,24 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indirect Channel</title>
-</head>
-<body>
-    <header>
-        <div id="HeaderPrincipal">
-            <h1>Canal Indirecto.</h1>
-            <h2>Bienvenido a la página principal de canal indirecto</h2>
-        </div>
-    </header>
-    <div id="NavBar">
-        <ul>
-            <li> <a href="Equipo.html"></a>Equipo</li>
-            <li><a href="WaitingList.html"></a>Lista de espera</li>
-            </ul>
+<html>
+  <head>
+    <title>Lista de espera</title>
+    <style>
+      /* Estilos para la presentación */
+      .presentacion {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Estilos para la barra de navegación */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="presentacion">
+      <h1>Lista de espera</h1>
+      <p>Bienvenido/a a nuestra lista de espera. Por favor, introduce tus datos para unirte a la lista.</p>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Unirse a la lista">
+      </form>
     </div>
     
-</body>
+    <div class="navbar">
+      <a href="#inicio">Inicio</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    
+    <div class="contenido">
+      <!-- Aquí iría el contenido de la página, como la información del equipo o los datos de contacto -->
+    </div>
+  </body>
 </html>
