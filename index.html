@@ -44,6 +44,26 @@
         <input type="submit" value="Unirse a la lista">
       </form>
     </div>
+    <script>
+      const form = document.querySelector('form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); // prevent form from submitting
+
+        const nombre = form.elements.nombre.value.trim();
+        const email = form.elements.email.value.trim();
+
+        if (nombre && email) {
+          // set countdown timer to 5000000 minutes
+          const countdownMinutes = 5000000;
+          const countdownMilliseconds = countdownMinutes * 60 * 1000;
+          setTimeout(() => {
+            console.log('You are now on the Wait List!');
+          }, countdownMilliseconds);
+        } else {
+          console.log('Por favor rellena toda la información que se solicita');
+        }
+      });
+    </script>
     
     <div class="navbar">
       <a href="#inicio">Inicio</a>
